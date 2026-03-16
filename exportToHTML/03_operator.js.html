@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>03_operator.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #c792ea; font-style: italic;}
+.s1 { color: #c3cee3;}
+.s2 { color: #89ddff;}
+.s3 { color: #f78c6c;}
+.s4 { color: #c3e88d;}
+.s5 { color: #717cb4; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#0f111a">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+03_operator.js</font>
+</center></td></tr></table>
+<pre><span class="s0">var </span><span class="s1">a</span><span class="s2">=</span><span class="s3">10</span>
+<span class="s0">var </span><span class="s1">b</span><span class="s2">=</span><span class="s3">3</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;---- 산술 연산자&quot;</span><span class="s2">);</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;----산슬 연산자&quot;</span><span class="s2">);</span>
+
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;a =&quot;</span><span class="s2">, </span><span class="s1">a</span><span class="s2">);</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;b =&quot;</span><span class="s2">, </span><span class="s1">b</span><span class="s2">);</span>
+
+
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;a + b=&quot;</span><span class="s2">, </span><span class="s1">a </span><span class="s2">+ </span><span class="s1">b</span><span class="s2">);   </span><span class="s5">// 덧셈</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;a - b=&quot;</span><span class="s2">, </span><span class="s1">a </span><span class="s2">- </span><span class="s1">b</span><span class="s2">);   </span><span class="s5">// 뺄셈</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;a * b =&quot;</span><span class="s2">, </span><span class="s1">a </span><span class="s2">* </span><span class="s1">b</span><span class="s2">);  </span><span class="s5">// 곱셈</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;a / b =&quot;</span><span class="s2">, </span><span class="s1">a </span><span class="s2">/ </span><span class="s1">b</span><span class="s2">);  </span><span class="s5">// 나눗셈</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;a % b =&quot;</span><span class="s2">, </span><span class="s1">a </span><span class="s2">** </span><span class="s1">b</span><span class="s2">); </span><span class="s5">// 거듭제곱</span>
+
+
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">`a % b =, </span><span class="s1">$</span><span class="s2">{</span><span class="s1">a </span><span class="s2">% </span><span class="s1">b</span><span class="s2">}</span><span class="s4">`</span><span class="s2">);</span>
+
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;---- 증감 연산자 에제 ----&quot;</span><span class="s2">);</span>
+
+<span class="s0">var </span><span class="s1">x</span><span class="s2">= </span><span class="s3">5</span><span class="s2">;</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;x =&quot;</span><span class="s2">, </span><span class="s1">x</span><span class="s2">);</span>
+
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;x++ =&quot;</span><span class="s2">, </span><span class="s1">x</span><span class="s2">++); </span><span class="s5">// 출혁 후 1 증가</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;x =&quot;</span><span class="s2">, </span><span class="s1">x</span><span class="s2">);</span>
+
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;++x =&quot;</span><span class="s2">, ++</span><span class="s1">x</span><span class="s2">); </span><span class="s5">// 1 증가 후 출력</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;x =&quot;</span><span class="s2">, </span><span class="s1">x</span><span class="s2">);</span>
+
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;x-- =&quot;</span><span class="s2">, </span><span class="s1">x</span><span class="s2">--); </span><span class="s5">//출력 후 1 감소</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;x =&quot;</span><span class="s2">, </span><span class="s1">x</span><span class="s2">);</span>
+
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;--x =&quot;</span><span class="s2">, --</span><span class="s1">x</span><span class="s2">); </span><span class="s5">// 1 감소 후 출력</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s4">&quot;x =&quot;</span><span class="s2">, </span><span class="s1">x</span><span class="s2">);</span>
+
+<span class="s0">var </span><span class="s1">num1</span><span class="s2">;</span>
+<span class="s1">num1 </span><span class="s2">= </span><span class="s3">10</span><span class="s2">;         </span><span class="s5">//  &quot;=&quot; 은 할당 연산자</span>
+
+<span class="s1">num1 </span><span class="s2">+= </span><span class="s3">5</span><span class="s2">;         </span><span class="s5">// x = x + 5; 이걸 줄여서 썼을 분</span>
+<span class="s1">num1 </span><span class="s2">-= </span><span class="s3">5</span><span class="s2">;         </span><span class="s5">// x = x - 5; 이걸 줄여서 썼을 뿐</span>
+
+
+<span class="s0">var </span><span class="s1">num2</span><span class="s2">=</span><span class="s3">1</span><span class="s2">;</span>
+<span class="s0">var </span><span class="s1">bool1</span><span class="s2">=</span><span class="s0">true</span><span class="s2">;</span>
+
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s1">num2 </span><span class="s2">== </span><span class="s1">bool1</span><span class="s2">); </span><span class="s5">// 1 == true      // == 는 값만 비교</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s1">num2 </span><span class="s2">=== </span><span class="s1">bool1</span><span class="s2">); </span><span class="s5">// 1 === true    // === 는 값과 타입 같은지 비교</span>
+
+<span class="s5">//  삼항 연산자</span>
+<span class="s5">//  시용법 : (조건식) ? 참일 때 실행되는 코드 : 거짓일 떼 실행되는 코드</span>
+
+<span class="s0">var </span><span class="s1">result</span><span class="s2">:</span><span class="s1">string </span><span class="s2">= </span><span class="s1">num2 </span><span class="s2">=== </span><span class="s1">bool1 </span><span class="s2">? </span><span class="s4">&quot;같다&quot; </span><span class="s2">: </span><span class="s4">&quot;다르다&quot; </span><span class="s2">;</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s1">result</span><span class="s2">);</span>
+
+
+<span class="s0">var </span><span class="s1">year</span><span class="s2">=</span><span class="s3">1985</span><span class="s2">;</span>
+<span class="s0">var </span><span class="s1">result2</span><span class="s2">= </span><span class="s1">year </span><span class="s2">&lt;= </span><span class="s3">1980 </span><span class="s2">? </span><span class="s4">&quot;1980 이전&quot; </span><span class="s2">: </span><span class="s4">&quot;1980 이후&quot;</span><span class="s2">;</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s1">result2</span><span class="s2">);</span>
+
+<span class="s0">var </span><span class="s1">result3</span><span class="s2">= </span><span class="s3">10 </span><span class="s2">? </span><span class="s0">true </span><span class="s2">: </span><span class="s0">false</span><span class="s2">;</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s1">result3</span><span class="s2">);</span>
+
+
+
+<span class="s5">// 논리합 //        =&gt; 둘 중에 하나라도 true면 true</span>
+<span class="s0">var </span><span class="s1">loginUser</span><span class="s2">= </span><span class="s4">&quot;admin&quot;</span><span class="s2">;</span>
+<span class="s0">var </span><span class="s1">gender</span><span class="s2">= </span><span class="s4">&quot;male&quot;</span><span class="s2">;</span>
+
+<span class="s0">var </span><span class="s1">result4</span><span class="s2">= </span><span class="s1">loginUser </span><span class="s2">=== </span><span class="s4">&quot;admin&quot; </span><span class="s2">|| </span><span class="s1">gender </span><span class="s2">=== </span><span class="s4">&quot;female&quot;</span>
+
+<span class="s5">// 논리곱 (&amp;&amp;)        =&gt; 둘 다 true여야 true</span>
+<span class="s0">var </span><span class="s1">result5</span><span class="s2">= </span><span class="s1">loginUser </span><span class="s2">=== </span><span class="s4">&quot;admin&quot; </span><span class="s2">&amp;&amp; </span><span class="s1">gender </span><span class="s2">=== </span><span class="s4">&quot;female&quot;</span><span class="s2">;</span>
+
+
+<span class="s5">// 부정 연산자 (!)</span>
+
+<span class="s0">var </span><span class="s1">result6</span><span class="s2">= !</span><span class="s0">true</span><span class="s2">;      </span><span class="s5">// false</span>
+<span class="s0">var </span><span class="s1">result7</span><span class="s2">= !</span><span class="s0">false</span><span class="s2">;     </span><span class="s5">// true</span>
+<span class="s0">var </span><span class="s1">result8</span><span class="s2">= !(</span><span class="s1">loginUser </span><span class="s2">=== </span><span class="s4">&quot;admin&quot;</span><span class="s2">)    </span><span class="s5">// false</span>
+<span class="s0">var </span><span class="s1">result9</span><span class="s2">= !</span><span class="s1">loginUser</span><span class="s2">;       </span><span class="s5">// false</span>
+<span class="s0">var </span><span class="s1">result10</span><span class="s2">= !!</span><span class="s1">loginUser</span><span class="s2">;      </span><span class="s5">// true    =&gt; 값이 있는지 없는지 판결</span>
+
+
+<span class="s5">// typeof 연산자 =&gt; 데이타 타입을 문자열로 표현</span>
+<span class="s1">console</span><span class="s2">.</span><span class="s1">log</span><span class="s2">(</span><span class="s0">typeof </span><span class="s1">result2</span><span class="s2">);</span>
+
+
+<span class="s0">if</span><span class="s2">(</span><span class="s0">typeof </span><span class="s1">x </span><span class="s2">=== </span><span class="s4">&quot;number&quot;</span><span class="s2">) {</span>
+    <span class="s1">x</span><span class="s2">++;</span>
+<span class="s2">}</span>
+<span class="s0">var </span><span class="s1">eee</span><span class="s2">= </span><span class="s0">typeof </span><span class="s1">x </span><span class="s2">=== </span><span class="s4">&quot;number&quot; </span><span class="s2">? </span><span class="s1">x</span><span class="s2">++ : </span><span class="s1">x</span><span class="s2">;</span>
+
+<span class="s0">var </span><span class="s1">type</span><span class="s2">= </span><span class="s0">typeof </span><span class="s1">x</span><span class="s2">;        </span><span class="s5">// &quot;number&quot;</span>
+
+
+</pre>
+</body>
+</html>
