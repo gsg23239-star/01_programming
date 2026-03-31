@@ -66,8 +66,10 @@ function workoutCoach(count) {
     console.log("종료되었습니다.")
 }
 
-workoutCoach();
-workoutCoach("s");
+
+
+
+
 
 
 
