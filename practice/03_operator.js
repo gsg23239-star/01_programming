@@ -1,49 +1,93 @@
-for (var i=1;i <= 20; i++) {
-    if (i % 3 === 0) {  //3의 배수일때
-    console.log("짝")
-    } else {
-        console.log(i);
-    }
+var a = 10;
+var b = 3;
+
+console.log("---- 산술 연산자 예제 ----");
+
+console.log("a =", a);
+console.log("b =", b);
+
+
+console.log("a + b =", a + b);   // 덧셈
+console.log("a - b =", a - b);   // 뺄셈
+console.log("a * b =", a * b);   // 곱셈
+console.log("a / b =", a / b);   // 나눗셈
+console.log("a % b =", a % b);   // 나머지
+console.log("a ** b =", a ** b); // 거듭제곱
+
+console.log(`a % b = ${a % b}`);
+
+console.log("---- 증감 연산자 예제 ----");
+
+var x = 5;
+console.log("x =", x);                         // 5
+
+console.log("x++ =", x++); // 출력 후 1 증가     // 5
+console.log("x =", x);                         // 6
+
+console.log("++x =", ++x); // 1 증가 후 출력     // 7
+console.log("x =", x);                         // 7
+
+console.log("x-- =", x--); // 출력 후 1 감소    // 7
+console.log("x =", x);                         // 6
+
+console.log("--x =", --x); // 1 감소 후 출력    // 5
+console.log("x =", x);                        // 5
+
+var num1;
+num1 = 10;       // "=" 은 할당 연산자
+
+num1 += 5;       // x = x + 5;  이걸 줄여서 썼을 뿐
+num1 -= 5;       // x = x - 5;  이걸 줄여서 썼을 뿐
+
+
+var num2 = 1;
+var bool1 = true;
+
+console.log(num2 == bool1);    // 1 == true     // == 는 값만 비교
+console.log(num2 === bool1);   // 1 === true    // === 는 값과 타입이 같은지 비교
+
+// 삼항 연산자
+// 사용법 : 조건식 ? 참일 때 실행되는 코드 : 거짓일 때 실행되는 코드
+//         조건식 -> 비교 연산자를 사용한 '식'이 써져야 함 -> 결과가 true, false로 나오는 식
+
+var result = num2 === bool1 ? "같다" : "다르다";
+console.log(result);
+
+
+var year = 1985;
+var result2 = year <= 1980 ? "1980 이전" : "1980 이후";
+console.log(result2);
+
+var result3 = 0 ? true : false;
+console.log(result3);
+
+
+// 논리합 (||)     => 둘 중에 하나라도 true면 true
+var loginUser = "admin";
+var gender = "male";
+
+var result4 = loginUser === "admin" || gender === "female";
+
+// 논리곱 (&&)     => 둘 다 true여야 true
+var result5 = loginUser === "admin" && gender === "female";
+
+
+// 부정 연산자 (!)
+
+var result6 = !true;        // false
+var result7 = !false;       // true
+var result8 = !(loginUser === "admin")    // false
+var result9 = !loginUser;     // false
+var result10 = !!loginUser;   // true     => 값이 있는지 없는지 판별
+
+
+// typeof 연산자 => 데이터 타입을 문자열로 반환
+console.log(typeof result2);
+
+
+if (typeof x === "number") {
+    x++;
 }
+var eee = typeof x === "number" ? x++ : x;
 
-
-
-
-
-// 1사이클 => i = 1 => sum 1
-// 2사이클 => i = 2 => sum +2 = 3
-// 3사이킁클=> i = 3 => sum +3 = 6
-for (var i=1; i <= 100; i++) {
-    sum = sum + i;
-    if (합계 >= 500) {
-        console.log(합계);
-        break;
-    }
-}
-
-
-for (var i=10; i >= 1; i--) {
-    if (i % 2 === 0) {
-        console.log(i);
-    }
-}
-
-
-
-for (var i=10; i >= 10; i++) {
-    if (i ==7 ) {
-        continue;
-    }
-    console.log(i);
-}
-
-
-var text= "javacript is powerful and fun!"  //31글자 -> 1부터 31글자까지 있다.
-var result=0;   //"o"를 만났을 때 갯수 카운팅을 할 변수
-
-
-for (var i=0; i < text.length; i++) {
-    if(text[i] === "o") {
-        result = result + 1;
-    }
-}
+var type = typeof x;            // "number"
